@@ -523,6 +523,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     width: 264px;
     height: 40px;
+    padding-left: 16px;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -535,7 +538,14 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-form-input:hover,
 .footer-form-input:focus {
     border: 1px solid #31d0aa;
+    border-color: #31d0aa;
 }
+
+
+.footer-form-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 
 .footer-subscribe-text {
     font-weight: 500;
@@ -647,13 +657,19 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .close-button:hover,
 .close-button:focus {
-    fill: #404bbf;
+    background-color: #404bbf;
+    border: none;
 }
 
 .modal-close {
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
+}
+
+.close-button:hover .modal-close,
+.close-button:focus .modal-close {
+    fill: #ffffff;
 }
 
 
@@ -760,6 +776,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.16667;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
+    margin-bottom: 16px;
 }
 
 .modal-textarea:focus {
