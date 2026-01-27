@@ -543,7 +543,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .footer-form-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: #fff;
 }
 
 
@@ -783,12 +783,16 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: #4d5ae5;
 }
 
+.modal-input-container {
+    position: relative;
+}
+
 
 .modal-form-icon {
     fill: #2e2f42;
     position: absolute;
     top: 50%;
-    left: 19px;
+    left: 16px;
     transform: translateY(-50%);
     pointer-events: none;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -820,6 +824,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         letter-spacing: 0.04em;
         color: #8e8f99;
     }
+
 
 .visually-hidden {
     position: absolute;
@@ -874,7 +879,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 150ms ease;
 }
 
-/* ✔ КЛІК */
 .modal-accept:checked+.checkbox-label .checkbox-icon-span {
     background-color: #404bbf;
     border: none;
