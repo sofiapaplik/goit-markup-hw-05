@@ -189,7 +189,6 @@ p {
 .main-button:hover,
 .main-button:focus {
 background-color: #404bbf;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden { 
@@ -312,7 +311,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .team-link-icon:hover,
 .team-link-icon:focus {
     background-color: #404bbf;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -508,7 +506,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-link-icon:hover,
 .footer-link-icon:focus {
     background-color: #31d0aa;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -872,13 +869,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     justify-content: center;
     fill: transparent;
-    transition: background-color 250ms ease, border 250ms ease;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-icon {
     fill: #f4f4fd;
     opacity: 0;
-    transition: opacity 150ms ease;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-accept:checked+.checkbox-label .checkbox-icon-span {
